@@ -3,7 +3,7 @@ var app = express();
 var path = require('path');
 var fileUpload = require('express-fileupload');
 var s3 = require('s3');
-var keys = require('keys.js');
+var keys = require('./keys.js');
  
 var client = s3.createClient({
   maxAsyncS3: 20,     // this is the default 
@@ -60,6 +60,6 @@ app.post('/upload', function (req, res) {
   });
 });
 
-app.listen(5000, function () {
+app.listen(3000, function () {
   console.log('Example app listening on port 3000!');
 });
