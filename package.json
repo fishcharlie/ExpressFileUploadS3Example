@@ -1,0 +1,25 @@
+{
+  "name": "ExpressFileUploadS3Example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fishcharlie/ExpressFileUploadS3Example.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fishcharlie/ExpressFileUploadS3Example/issues"
+  },
+  "homepage": "https://github.com/fishcharlie/ExpressFileUploadS3Example#readme",
+  "dependencies": {
+    "express": "^4.15.4",
+    "express-fileupload": "^0.1.4",
+    "s3": "^4.4.0"
+  }
+}
