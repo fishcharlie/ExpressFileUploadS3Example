@@ -1,0 +1,1 @@
+This file was created so that the uploads/ folder would be checked into Git.
