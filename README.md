@@ -49,4 +49,4 @@
 
 -   The URL to access the objects you upload will be `https://s3-yourawsregioncode-amazonaws.com/YOURS3BUCKETNAME/FILEPATH`, see [this link](http://docs.aws.amazon.com/general/latest/gr/rande.html#s3_region) for what to put in place of `yourawsregioncode`. For example if my S3 bucket was called `s3examplebucket`, in the US West (Oregon) region and I had a file in the root directory called `picture.jpg` the URL to access it would be `https://s3-us-west-2.amazonaws.com/s3examplebucket/picture.jpg`
 -   Amazon Web Services S3 is **not** a free service. Please be aware of all pricing related to this service. As of 08/24/2017 the pricing infomation can be found at [this link](https://aws.amazon.com/s3/pricing/).
--   Contact me with any questions!! You can find me on Twitter [@char_fish](https://twitter.com/char_fish), direct messages should be enabled and I would be more than happy to answer any questions.
+-   Contact me with any questions!! You can use my [contact page](https://blog.charlie.fish/contact). Feel free to also submit issues or pull requests on GitHub.
