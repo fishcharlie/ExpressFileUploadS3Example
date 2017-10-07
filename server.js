@@ -32,20 +32,22 @@ app.post('/upload', function(req, res) {
 
 	// The name of the input field (i.e. "sampleFile") is used to retrieve the uploaded file 
 	var sampleFile = req.files.sampleFile;
-
+	
+	var newFileName = Date.now() + req.files.sampleFile.name; // creating unique file name based on current time and file name of file uploaded, that way if two people upload the same file name it won't cause problems
+	
 	// Use the mv() method to place the file somewhere on your server 
-	sampleFile.mv('uploads/' + req.files.sampleFile.name, function(err) {
+	sampleFile.mv('uploads/' + newFileName, function(err) {
 		if (err) {
 			return res.status(500).send(err);
 		}
 
 		// Upload to S3
 		var params = {
-			localFile: 'uploads/' + req.files.sampleFile.name,
+			localFile: 'uploads/' + newFileName,
 
 			s3Params: {
 				Bucket: keys.s3bucket,
-				Key: req.files.sampleFile.name, // File path of location on S3
+				Key: newFileName, // File path of location on S3
 			},
 		};
 		var uploader = client.uploadFile(params);
@@ -56,6 +58,7 @@ app.post('/upload', function(req, res) {
 		uploader.on('end', function() {
 			console.log("done uploading");
 			res.send('File uploaded!');
+			fs.unlink('uploads/' + newFileName); //Removing file from server after uploaded to S3
 		});
 	});
 });
