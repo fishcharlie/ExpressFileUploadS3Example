@@ -4,6 +4,7 @@ var path = require('path');
 var fileUpload = require('express-fileupload');
 var s3 = require('s3');
 var keys = require('./keys.js');
+var fs = require('fs');
 
 var client = s3.createClient({
 	maxAsyncS3: 20, // this is the default 
