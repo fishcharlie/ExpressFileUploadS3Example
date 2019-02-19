@@ -1,7 +1,6 @@
 # ExpressFileUploadS3Example
 
 
-
 ### AWS User Setup Steps
 
 1.  Create an [Amazon Web Services (AWS)](https://aws.amazon.com) account.
@@ -14,11 +13,10 @@
 8.  Select `Attach existing policies directly`.
 9.  In the search field right below that type in `S3`.
 10. Click on the check box next to `AmazonS3FullAccess`.
-11. Scroll down and click on the `Next: Review` button.
-12. Click `Create user`.
-13. This will display a table with your `Access key ID` and `Secret access key`. You will need to click the `Show` button to view your `Secret access key`. **Important: this is the *only* time you will be able to see your secret access key without regenerating it, so please be sure to save it somewhere secure.**
-
-
+11. Scroll down and click on the `Next: Tags` button.
+12. Skip the next screen by pressing "Next: Review" (Unless you want to add specific tags for the user)
+13. Click `Create user`.
+14. This will display a table with your `Access key ID` and `Secret access key`. You will need to click the `Show` button to view your `Secret access key`. **Important: this is the *only* time you will be able to see your secret access key without regenerating it, so please be sure to save it somewhere secure.**
 
 ### AWS S3 Bucket Creation
 
@@ -28,11 +26,17 @@
 4.  Give your bucket a unique name. This could be your project name or whatever you want to call it.
 5.  Select the region you wish to store your bucket data in.
 6.  Click `Next`.
-7.  The next panel allows you to set custom properties for your bucket. For now we will use the default settings so click `Next`.
-8.  Under the drop down for `Manage public permissions` select `Grant public read access to this bucket`. **Important: this will allow anyone to view all the data you put in the bucket. There are better ways to secure the data but since this is a basic tutorial we won't be going over those concepts here.**
+7.  The next panel "Configure Options" allows you to set custom properties for your bucket. For now we will use the default settings so click `Next`.
+
+8. The next panel "Set Permissions" allows you to set public permissions for your bucket:  
+
+Uncheck: Block new public ACLs and uploading public objects (Recommended) 
+Uncheck: Remove public access granted through public ACLs (Recommended) 
+Uncheck: Block new public bucket policies (Recommended) 
+Uncheck: Block public and cross-account access if bucket has public policies (Recommended) 
+
 9.  Click `Next`.
 10. Click `Create bucket`.
-
 
 
 ### Project Setup Steps
@@ -42,7 +46,6 @@
 3.  Change the `keys.js` file to include your IAM user keys and the name of your S3 bucket.
 4.  Review the code, and implement in your own projects or applications.
 5.  Have fun!!!
-
 
 
 ### Important Notes
