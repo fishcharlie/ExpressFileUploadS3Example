@@ -14,7 +14,7 @@
 9.  In the search field right below that type in `S3`.
 10. Click on the check box next to `AmazonS3FullAccess`.
 11. Scroll down and click on the `Next: Tags` button.
-12. Skip the next screen by pressing "Next: Review" (Unless you want to add specific tags for the user)
+12. Skip this screen by pressing `Next: Review` (Unless you want to add specific tags for the user)
 13. Click `Create user`.
 14. This will display a table with your `Access key ID` and `Secret access key`. You will need to click the `Show` button to view your `Secret access key`. **Important: this is the *only* time you will be able to see your secret access key without regenerating it, so please be sure to save it somewhere secure.**
 
