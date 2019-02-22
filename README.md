@@ -50,6 +50,7 @@ Uncheck: Block public and cross-account access if bucket has public policies (Re
 
 ### Important Notes
 
+-   All items you upload/store in the bucket will be public. This is not considered best practice. As this is a basic tutorial it is all that we cover. It would be a good idea to research how to make the items private and have better controls over access to the bucket. Please be mindful of security when building web services.
 -   The URL to access the objects you upload will be `https://s3-yourawsregioncode-amazonaws.com/YOURS3BUCKETNAME/FILEPATH`, see [this link](http://docs.aws.amazon.com/general/latest/gr/rande.html#s3_region) for what to put in place of `yourawsregioncode`. For example if my S3 bucket was called `s3examplebucket`, in the US West (Oregon) region and I had a file in the root directory called `picture.jpg` the URL to access it would be `https://s3-us-west-2.amazonaws.com/s3examplebucket/picture.jpg`
 -   You can use [Cyberduck](https://cyberduck.io) or the [AWS Console](https://console.aws.amazon.com/console/home) to view  files, delete files, upload files, download files, and much more in your S3 bucket.
 -   Amazon Web Services S3 is **not** a free service. Please be aware of all pricing related to this service. As of 08/24/2017 the pricing infomation can be found at [this link](https://aws.amazon.com/s3/pricing/).
