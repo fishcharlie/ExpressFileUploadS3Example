@@ -27,14 +27,11 @@
 5.  Select the region you wish to store your bucket data in.
 6.  Click `Next`.
 7.  The next panel "Configure Options" allows you to set custom properties for your bucket. For now we will use the default settings so click `Next`.
-
 8. The next panel "Set Permissions" allows you to set public permissions for your bucket:  
-
-Uncheck: Block new public ACLs and uploading public objects (Recommended) 
-Uncheck: Remove public access granted through public ACLs (Recommended) 
-Uncheck: Block new public bucket policies (Recommended) 
-Uncheck: Block public and cross-account access if bucket has public policies (Recommended) 
-
+  - Uncheck: Block new public ACLs and uploading public objects (Recommended) 
+  - Uncheck: Remove public access granted through public ACLs (Recommended) 
+  - Uncheck: Block new public bucket policies (Recommended) 
+  - Uncheck: Block public and cross-account access if bucket has public policies (Recommended) 
 9.  Click `Next`.
 10. Click `Create bucket`.
 
