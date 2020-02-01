@@ -11,8 +11,7 @@
     "url": "git+https://github.com/fishcharlie/ExpressFileUploadS3Example.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Charlie Fish",
   "bugs": {
     "url": "https://github.com/fishcharlie/ExpressFileUploadS3Example/issues"
   },
