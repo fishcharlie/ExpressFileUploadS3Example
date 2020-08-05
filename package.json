@@ -18,7 +18,7 @@
   "homepage": "https://github.com/fishcharlie/ExpressFileUploadS3Example#readme",
   "dependencies": {
     "express": "^4.15.4",
-    "express-fileupload": "^0.1.4",
+    "express-fileupload": "^1.1.9",
     "s3": "^4.4.0"
   }
 }
